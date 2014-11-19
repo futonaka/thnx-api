@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+
+  post 'user' => 'user#create'
+  patch 'user/:id' => 'user#update'
+  get  'users/:id' => 'user#index'
+
   post 'thnx/:id/:to_id' => 'thnx#create'
   get 'thnx/:id' => 'thnx#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
