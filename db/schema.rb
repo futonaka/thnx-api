@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141119032349) do
+ActiveRecord::Schema.define(version: 20141119074324) do
 
   create_table "thnxes", force: true do |t|
     t.integer  "from"
     t.integer  "to"
     t.datetime "sent_at"
     t.datetime "received_at"
+    t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,7 +27,7 @@ ActiveRecord::Schema.define(version: 20141119032349) do
     t.string   "name"
     t.date     "birthday"
     t.string   "organization"
-    t.text     "message"
+    t.string   "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
