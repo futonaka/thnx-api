@@ -12,8 +12,9 @@ class ThnxController < ApplicationController
 
     thnxes = Thnx.where(to: thnx_recv_uesr_id, received_at: nil)
     update_time = DateTime.now
-    thnxes.each do |thnx|
+    thnxes.to_a.map! do |thnx|
       thnx.update(received_at: update_time)
+      thnx.attributes.merge({"from_name" => User.find_by(id: thnx.from).name})
     end
 
     render :json => thnxes
