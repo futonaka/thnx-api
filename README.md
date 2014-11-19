@@ -1,4 +1,44 @@
-== README
+## README
+
+### ユーザ一覧の取得
+
+#### API
+
+```
+GET /users/:id
+```
+
+#### request sample
+
+```
+http://<rails host:port>/users/1
+```
+
+#### response sample
+
+```
+```
+
+
+### ありがとうの登録
+
+#### API
+
+```
+POST /thnx/:id/:to_id
+```
+
+#### request sample
+
+```
+http://<rails host:port>/thnx/1/2
+```
+
+#### response sample
+
+```
+success
+```
 
 ### ありがとうの取得
 
