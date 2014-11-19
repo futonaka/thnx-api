@@ -2,8 +2,9 @@ class ThnxController < ApplicationController
   def create
     from_id = params['id']
     to_id   = params['to_id']
+    message = params['message']
 
-    Thnx.create(from: from_id, to: to_id, sent_at: DateTime.now)
+    Thnx.create(from: from_id, to: to_id, sent_at: DateTime.now, message: message)
     render :json => 'success'
   end
 

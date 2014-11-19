@@ -13,13 +13,13 @@ class UserController < ApplicationController
 
   def update
     user_id = params['id']
-    result = User.find_by(id: user_id).update(params.require(:user).permit(:name, :birthday, :organization))
+    result = User.find_by(id: user_id).update(params.require(:user).permit(:name, :birthday, :organization, :image_url))
 
     render :json => result
   end
 
   def create
-    user = User.create(params.require(:user).permit(:name, :birthday, :organization))
+    user = User.create(params.require(:user).permit(:name, :birthday, :organization, :image_url))
     render :json => user
   end
 
