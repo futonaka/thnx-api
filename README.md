@@ -17,7 +17,7 @@ http://<rails host:port>/user
 #### response sample
 
 ```
-{"id":1,"name":"山田","birthday":null,"organization":"org1","created_at":"2014-11-19T05:45:55.000Z","updated_at":"2014-11-19T06:06:02.000Z"}
+{"id":1,"name":"山田","birthday":null,"organization":"org1","image_url":"http://image.url","created_at":"2014-11-19T05:45:55.000Z","updated_at":"2014-11-19T06:06:02.000Z"}
 ```
 
 ### ユーザの更新
@@ -57,7 +57,7 @@ http://<rails host:port>/users/1
 #### response sample
 
 ```
-[{"id":1,"name":"山田","birthday":null,"organization":"org1","created_at":"2014-11-19T05:45:55.000Z","updated_at":"2014-11-19T06:06:02.000Z"},{"id":3,"name":"フッティ","birthday":null,"organization":"org1","created_at":"2014-11-19T06:08:47.000Z","updated_at":"2014-11-19T06:08:47.000Z"}]
+[{"id":1,"name":"山田","birthday":null,"organization":"org1","image_url":"http://image.url","created_at":"2014-11-19T05:45:55.000Z","updated_at":"2014-11-19T06:06:02.000Z"},{"id":3,"name":"フッティ","birthday":null,"organization":"org1","image_url":"http://image.url","created_at":"2014-11-19T06:08:47.000Z","updated_at":"2014-11-19T06:08:47.000Z"}]
 ```
 
 
