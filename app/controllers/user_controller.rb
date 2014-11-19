@@ -22,4 +22,11 @@ class UserController < ApplicationController
     user = User.create(params.require(:user).permit(:name, :birthday, :organization))
     render :json => user
   end
+
+  def delete
+    user_id = params['id']
+    result = User.find_by(id: user_id).destroy
+
+    render :json => result
+  end
 end

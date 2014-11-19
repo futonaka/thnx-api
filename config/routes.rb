@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   post 'user' => 'user#create'
   patch 'user/:id' => 'user#update'
+  delete 'user/:id' => 'user#delete'
   get  'users/:id' => 'user#index'
 
   post 'thnx/:id/:to_id' => 'thnx#create'
