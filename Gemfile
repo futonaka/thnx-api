@@ -10,7 +10,10 @@ gem 'spring', :group => :development
 
 gem 'mysql2'
 
-
+gem 'pry-rails'
+gem 'pry-byebug'
+gem 'pry-doc'
+gem 'pry-stack_explorer'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
